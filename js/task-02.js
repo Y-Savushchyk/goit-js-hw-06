@@ -1,8 +1,14 @@
 const ingredients = [
-  'Potatoes',
-  'Mushrooms',
-  'Garlic',
-  'Tomatos',
-  'Herbs',
-  'Condiments',
+  "Potatoes",
+  "Mushrooms",
+  "Garlic",
+  "Tomatos",
+  "Herbs",
+  "Condiments",
 ];
+const ingredientsListRef = document.querySelector("#ingredients");
+for (let i = 0; i < ingredients.length; i++) {
+  const ingredientsItemRef = document.createElement("li");
+  ingredientsItemRef.textContent = ingredients[i];
+  ingredientsListRef.prepend(ingredientsItemRef);
+}
