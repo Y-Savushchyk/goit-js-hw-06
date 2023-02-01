@@ -12,3 +12,16 @@ const images = [
     alt: "Group of Horses Running",
   },
 ];
+for (const image of images) {
+  const galleryListRef = document.querySelector(".gallery");
+
+  for (let i = 0; i < images.length; i++) {
+    const galleryItemRef = document.createElement("li");
+    const galleryImgRef = document.createElement("img");
+    galleryImgRef.setAttribute("url", image.url);
+    galleryImgRef.setAttribute("alt", image.alt);
+    galleryItemRef.prepend(galleryImgRef);
+    galleryListRef.prepend(galleryItemRef);
+    break;
+  }
+}
