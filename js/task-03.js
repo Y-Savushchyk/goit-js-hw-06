@@ -14,6 +14,8 @@ const images = [
 ];
 for (const image of images) {
   const galleryListRef = document.querySelector(".gallery");
+  galleryListRef.style.display = "flex";
+  galleryListRef.style.listStyle = "none";
 
   for (let i = 0; i < images.length; i++) {
     const galleryItemRef = document.createElement("li");
