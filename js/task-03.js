@@ -18,8 +18,9 @@ for (const image of images) {
   for (let i = 0; i < images.length; i++) {
     const galleryItemRef = document.createElement("li");
     const galleryImgRef = document.createElement("img");
-    galleryImgRef.setAttribute("url", image.url);
+    galleryImgRef.setAttribute("src", image.url);
     galleryImgRef.setAttribute("alt", image.alt);
+    galleryImgRef.setAttribute("width", 300);
     galleryItemRef.prepend(galleryImgRef);
     galleryListRef.prepend(galleryItemRef);
     break;
