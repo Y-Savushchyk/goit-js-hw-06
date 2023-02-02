@@ -9,3 +9,4 @@ const categorieTitleRef = document.querySelectorAll("h2");
 for (let i = 0; i < categoriesListRef.length; i += 1) {
   console.log(`Category: ${categorieTitleRef[i].textContent}`);
   console.log(`Elements: ${categorieListRef[i].children.length}`);
+  /**/
